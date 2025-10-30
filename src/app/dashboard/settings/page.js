@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Tabs from "@/components/shared/tabs";
 import GeneralSettings from "@/components/settings/generalSettings";
+import NotificationSettings from "@/components/settings/notificationSettings";
+import SecuritySettings from "@/components/settings/securitySettings";
 
 const page = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -15,14 +17,13 @@ const page = () => {
 
     {
       label: "Notification",
-      content: <div> m,sassdfsd content</div>,
-
+      content: <NotificationSettings />,
       disabled: false,
     },
 
     {
       label: "Security",
-      content: <div> lead content</div>,
+      content: <SecuritySettings />,
       disabled: false,
     },
   ];

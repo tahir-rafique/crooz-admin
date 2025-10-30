@@ -1,7 +1,5 @@
-// components/Tabs.js
-
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 const TabContent = React.memo(({ content }) => {
   return <div>{content}</div>;
@@ -18,7 +16,7 @@ const TabButton = React.memo(
             ? "btn-primary h-[40px] w-fit px-3.5 !rounded-[8px]  "
             : disabled
             ? ""
-            : " text-[var(--primary) hover:opacity-80 text-[var(--gray)] border  "
+            : "  hover:opacity-80  border  "
         } transition-all  border-[#45A99D] h-[40px] w-full max-w-[250px] rounded-[8px] duration-200 whitespace-nowrap px-3.5 ${
           icon ? "flex items-center justify-center gap-2 w-full" : ""
         }`}
