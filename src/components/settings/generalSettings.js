@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import CustomSelect from "../shared/customSelect";
 import Input from "../shared/input";
 import Button from "../shared/button";
 
@@ -26,6 +25,7 @@ export default function GeneralSettings() {
       <div className=" grid grid-cols-2 gap-10 w-full">
         <Input
           label="Full Name"
+          labelClass=" !font-normal"
           className={"w-full"}
           wrapperClass={"!rounded-primary "}
           placeholder="Charlene Reed "
@@ -33,35 +33,35 @@ export default function GeneralSettings() {
 
         <Input
           label="Email"
+          labelClass=" !font-normal"
           className={"w-full"}
           wrapperClass={"!rounded-primary "}
           placeholder="charlenereed@gmail.com "
         />
 
-        {/* <CustomSelect
-          label={"Date of Birth"}
-          className=""
-          placeholder="25 January 1990"
-        /> */}
-
+        {/* -----------     date    ------------ */}
         <Input
           label="Date of Birth"
+          labelClass=" !font-normal"
           className={"w-full"}
           wrapperClass={"!rounded-primary "}
-          placeholder="San Jose, California, USA "
+          inputClass={" !border !border-lightGray !rounded-primary !bg-white"}
+          placeholder="25 January 1990 "
           type="date"
           disabled
         />
 
         <Input
           label="Permanent Address"
+          labelClass=" !font-normal"
           className={"w-full"}
-          wrapperClass={"!rounded-primary "}
+          wrapperClass={"!rounded-primary  "}
           placeholder="San Jose, California, USA "
         />
 
         <Input
           label="Postal Code"
+          labelClass=" !font-normal"
           className={"w-full"}
           wrapperClass={"!rounded-primary "}
           placeholder="45962 "
@@ -69,6 +69,7 @@ export default function GeneralSettings() {
 
         <Input
           label="Country"
+          labelClass=" !font-normal"
           className={"w-full"}
           wrapperClass={"!rounded-primary "}
           placeholder="USA"

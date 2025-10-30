@@ -22,13 +22,13 @@
 
 .date-picker:focus-within {
   box-shadow: none;
-  outline: 1px solid #308748 !important;
+  /* outline: 1px solid #308748 !important; */
 }
 
-.date-picker-popup .ant-picker-cell-today .ant-picker-cell-inner::before {
+/* .date-picker-popup .ant-picker-cell-today .ant-picker-cell-inner::before {
   border: 1px solid #308748 !important;
 }
 
 .date-picker-popup .ant-picker-cell-selected .ant-picker-cell-inner {
   background: #308748 !important;
-}
+} */

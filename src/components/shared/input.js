@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { DatePicker } from "antd";
-import dayjs from "dayjs";
 const Input = ({
   type = "text",
   wrapperClass,
@@ -61,10 +60,6 @@ const Input = ({
     }
   };
 
-  // const disablePastDates = (current) => {
-  //   return current && current < dayjs().add(startDate, "day").startOf("day");
-  // };
-
   return (
     <>
       <div
@@ -84,6 +79,7 @@ const Input = ({
             // disabledDate={disablePastDates}
             popupClassName="date-picker-popup"
             style={inputStyle}
+            placeholder={placeholder}
             format="DD/MM/YYYY" // Set format to dd/mm/yyyy
           />
         ) : (

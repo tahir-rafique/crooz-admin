@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Tabs from "@/components/shared/tabs";
-import GeneralSettings from "@/components/billing-revenue/generalSettings";
+import GeneralSettings from "@/components/settings/generalSettings";
 
 const page = () => {
   const [activeTab, setActiveTab] = useState(0);
