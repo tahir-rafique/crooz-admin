@@ -61,10 +61,10 @@ const Input = ({
     }
   };
 
-  const disablePastDates = (current) => {
-    // return current && current < dayjs().startOf("day");
-    return current && current < dayjs().add(startDate, "day").startOf("day");
-  };
+  // const disablePastDates = (current) => {
+  //   return current && current < dayjs().add(startDate, "day").startOf("day");
+  // };
+
   return (
     <>
       <div
@@ -73,7 +73,7 @@ const Input = ({
         } ${className}`}
       >
         {label && (
-          <label className={`font-medium text-base text-black  ${labelClass}`}>
+          <label className={`font-medium text-sm text-black  ${labelClass}`}>
             {label}
           </label>
         )}
@@ -81,7 +81,7 @@ const Input = ({
           <DatePicker
             onChange={onChange}
             className={`date-picker ${inputClass}`}
-            disabledDate={disablePastDates}
+            // disabledDate={disablePastDates}
             popupClassName="date-picker-popup"
             style={inputStyle}
             format="DD/MM/YYYY" // Set format to dd/mm/yyyy

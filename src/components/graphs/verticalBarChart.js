@@ -27,7 +27,7 @@ const VerticalBarChart = ({ chartData }) => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-4 sm:p-6 bg-white border border-lightGray rounded-[20px]">
+    <div className="w-full max-w-4xl mx-auto p-4 sm:p-6 bg-white border border-lightGray rounded-secondary">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-end gap-4 mb-6">
         {/* <h2 className="p-3 text-sm sm:text-base font-semibold leading-[125%]">
           {chartData.title}

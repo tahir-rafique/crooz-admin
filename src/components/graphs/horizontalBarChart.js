@@ -18,7 +18,7 @@ export default function HorizontalBarChart({ chartData }) {
   // ];
 
   return (
-    <div className="w-full   bg-white border border-lightGray rounded-[20px] p-4 flex flex-col justify-between">
+    <div className="w-full   bg-white border border-lightGray rounded-secondary p-4 flex flex-col justify-between">
       <h2 className="p-3 text-sm sm:text-base font-semibold leading-[125%]">
         {chartData.title}
       </h2>

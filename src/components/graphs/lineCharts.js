@@ -51,7 +51,7 @@ const LineCharts = ({ chartData }) => {
   };
 
   return (
-    <div className="w-full bg-white p-4 sm:p-6 md:p-8 rounded-[20px] border border-lightGray">
+    <div className="w-full bg-white p-4 sm:p-6 md:p-8 rounded-secondary border border-lightGray">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 md:mb-8">
         <h2 className="text-sm sm:text-base font-semibold leading-[125%]">

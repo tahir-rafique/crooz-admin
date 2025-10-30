@@ -37,6 +37,7 @@
 
   /* rounded basic  */
   --radius-primary: 10px;
+  --radius-secondary: 20px;
 
   /* shadow  */
   --shadow-primary: 0px -11.295px 25.1px 0px rgba(1, 102, 152, 0.1),
