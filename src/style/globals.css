@@ -91,3 +91,7 @@
 .progress-teal-grad .ant-progress-bg {
   background: linear-gradient(90deg, #9ce7dc 0%, #018E81 100%) !important;
 }
+
+.progress-green-grad .ant-progress-bg {
+  background: linear-gradient(90deg, #9ce7dc 0%, #89F336 100%) !important;
+}

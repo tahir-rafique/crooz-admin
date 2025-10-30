@@ -9,6 +9,7 @@ import BotConversation from "@/components/dashboard/botConversation";
 import VerticalBarChart from "@/components/graphs/verticalBarChart";
 import LineCharts from "@/components/graphs/lineCharts";
 import HorizontalBarChart from "@/components/graphs/horizontalBarChart";
+import PlatformActivityTrend from "@/components/dashboard/platformActivityTrend";
 
 const userTrendChartData = {
   title: "User Trend",
@@ -39,11 +40,11 @@ const MMRTrendChartData = {
 const dotDropOfChartData = {
   title: "Bot Drop-Off",
   data: [
-    { name: "Started Chat", value: 344, color: "#FDB96A" },
-    { name: "Selected Report Type", value: 112, color: "#B8D488" },
-    { name: "Provided Input", value: 600, color: "#8FCA6E" },
-    { name: "Report Generated", value: 156, color: "#7AC7C4" },
-    { name: "Dropped Off (No report)", value: 148, color: "#F4A99E" },
+    { name: "Started Chat", value: 650, color: "#FDC278" },
+    { name: "Selected Report Type", value: 600, color: "#B8D488" },
+    { name: "Provided Input", value: 480, color: "#8FCA6E" },
+    { name: "Report Generated", value: 350, color: "#91DFD4" },
+    { name: "Dropped Off (No report)", value: 240, color: "#FFA696" },
   ],
 };
 
@@ -65,10 +66,17 @@ export default function Page() {
 
       <LineCharts chartData={userTrendChartData} />
 
-      <div className=" flex gap-5 w-full">
-        <VerticalBarChart chartData={MMRTrendChartData} />
+      <div className=" grid grid-cols-2 gap-5 w-full">
+        <div className="w-full space-y-[14px]">
+          <h2 className="text-sm sm:text-base font-medium leading-normal ">
+            MRR/ARR Trend
+          </h2>
+          <VerticalBarChart chartData={MMRTrendChartData} />
+        </div>
         <HorizontalBarChart chartData={dotDropOfChartData} />
       </div>
+
+      <PlatformActivityTrend />
     </div>
   );
 }

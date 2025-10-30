@@ -54,11 +54,12 @@ const LineCharts = ({ chartData }) => {
     <div className="w-full bg-white p-4 sm:p-6 md:p-8 rounded-[20px] border border-lightGray">
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 md:mb-8">
-        <h2 className="text-lg sm:text-xl font-semibold text-gray-800">
+        <h2 className="text-sm sm:text-base font-semibold leading-[125%]">
           {chartData.title}
         </h2>
+
         <div className="relative w-full sm:w-auto">
-          <select className="w-full sm:w-auto appearance-none bg-[#9CE7DC] text-black px-4 sm:px-6 py-2 !pr-10 rounded-full font-medium cursor-pointer outline-none text-sm sm:text-base  ">
+          <select className="w-full sm:w-auto appearance-none bg-[#9CE7DC] text-black px-4 sm:px-6 py-2 !pr-10 rounded-full font-normal cursor-pointer outline-none text-sm sm:text-base  ">
             <option>Daily</option>
             <option>Weekly</option>
             <option>Monthly</option>

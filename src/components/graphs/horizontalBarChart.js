@@ -19,13 +19,13 @@ export default function HorizontalBarChart({ chartData }) {
 
   return (
     <div className="w-full   bg-white border border-lightGray rounded-[20px] p-4 flex flex-col justify-between">
-      <h2 className="px-3 text-lg sm:text-xl font-semibold text-gray-800">
+      <h2 className="p-3 text-sm sm:text-base font-semibold leading-[125%]">
         {chartData.title}
       </h2>
 
       <div className="flex w-full justify-between   items-center gap-4 xl:gap-12">
         {/* Chart */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full flex justify-center items-center lg:w-1/2">
           <ResponsiveContainer width="100%" height={300}>
             <BarChart
               data={chartData.data}
@@ -34,7 +34,7 @@ export default function HorizontalBarChart({ chartData }) {
             >
               <XAxis type="number" hide />
               <YAxis type="category" dataKey="name" hide />
-              <Bar dataKey="value" radius={[20, 20, 20, 20]} barSize={30}>
+              <Bar dataKey="value" radius={[20, 20, 20, 20]} barSize={40}>
                 {chartData.data.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={entry.color} />
                 ))}
