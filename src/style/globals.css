@@ -1,0 +1,93 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "./input.css";
+
+@import "tailwindcss";
+
+
+/* theme config */
+@theme {
+  --container-width: 1320px;
+
+  /* Breakpoints */
+  --breakpoint-xs: 430px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1320px;
+
+  /* font sizes */
+  /* --text-3xll: 32px; */
+
+  /* Colors */
+  --color-background: #F5F9FF;
+  --color-purple: #754CC6;
+  --color-teal: #45A99D;
+
+
+  --color-lightGray: #E4E4E4;
+  --color-dimGray: #353941;
+  --color-darkGray: #5A5B5C;
+
+  --color-yellowGradient: linear-gradient(90deg, #006e62 0%, #238b80 50%, #9ce7dc 100%);
+
+
+  --color-primary: #b1cc09;
+
+  /* rounded basic  */
+  --radius-primary: 10px;
+
+  /* shadow  */
+  --shadow-primary: 0px -11.295px 25.1px 0px rgba(1, 102, 152, 0.1),
+    0px 46.434px 46.434px 0px rgba(1, 102, 152, 0.09),
+    0px 11.295px 25.1px 0px rgba(1, 102, 152, 0.1);
+
+}
+
+
+@layer base {
+  body {
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  /* .container {
+    padding: 0 16px;
+    margin: 0 auto;
+  } */
+
+  input::-webkit-autofill {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg, #006e62 0%, #238b80 50%, #9ce7dc 100%);
+    color: #fff;
+    border-radius: 8px;
+  }
+
+  .btn-secondary {
+    background: linear-gradient(94deg, #6539b7 -23.73%, #b399ff 127.98%);
+    color: #fff;
+    border-radius: 8px;
+  }
+
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* custom styles */
+
+/*  -------------     ANT - Progess  */
+.progress-teal-grad .ant-progress-bg {
+  background: linear-gradient(90deg, #9ce7dc 0%, #018E81 100%) !important;
+}
