@@ -1,28 +1,22 @@
 "use client";
 import { useState } from "react";
 import Tabs from "@/components/shared/tabs";
-import GeneralSettings from "@/components/settings/generalSettings";
+import RevenueOverview from "@/components/billing-revenue/revenueOverview/page";
+import SubscriptionAndInvoice from "@/components/billing-revenue/subscriptionAndInvoice/page";
 
 const page = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
     {
-      label: "General",
-      content: <GeneralSettings />,
+      label: " Revenue Overview",
+      content: <RevenueOverview />,
       disabled: false,
     },
 
     {
-      label: "Notification",
-      content: <div> m,sassdfsd content</div>,
-
-      disabled: false,
-    },
-
-    {
-      label: "Security",
-      content: <div> lead content</div>,
+      label: " Subscription & Invoice",
+      content: <SubscriptionAndInvoice />,
       disabled: false,
     },
   ];

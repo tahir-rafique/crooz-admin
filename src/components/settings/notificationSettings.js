@@ -36,7 +36,7 @@ const NotificationSettings = () => {
 
   return (
     <div className="w-full  max-w-[1000px] ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full ">
         {Object.entries(notificationData).map(([categoryKey, category]) => (
           <div key={categoryKey}>
             <h2 className="text-base font-medium mb-3 px-4">
@@ -47,7 +47,7 @@ const NotificationSettings = () => {
                 {category.items.map((item, index) => (
                   <div
                     key={index}
-                    className="flex justify-between items-center  border border-lightGray  rounded-lg px-4 py-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition"
+                    className="flex justify-between items-center  border border-lightGray  rounded-primary px-4 py-3 hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition"
                   >
                     <span className="text-darkGray text-sm font-medium leading-normal">
                       {item}

@@ -16,7 +16,7 @@ const TabButton = React.memo(
             ? "btn-primary h-[40px] w-fit px-3.5 !rounded-[8px]  "
             : disabled
             ? ""
-            : "  hover:opacity-80  border  "
+            : "  hover:opacity-80  border bg-white  "
         } transition-all  border-[#45A99D] h-[40px] w-full max-w-[250px] rounded-[8px] duration-200 whitespace-nowrap px-3.5 ${
           icon ? "flex items-center justify-center gap-2 w-full" : ""
         }`}

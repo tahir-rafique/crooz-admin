@@ -1,7 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "./input.css";
-
 @import "tailwindcss";
 
 
@@ -24,16 +23,9 @@
   --color-background: #F5F9FF;
   --color-purple: #754CC6;
   --color-teal: #45A99D;
-
-
   --color-lightGray: #E4E4E4;
   --color-dimGray: #353941;
   --color-darkGray: #5A5B5C;
-
-  --color-yellowGradient: linear-gradient(90deg, #006e62 0%, #238b80 50%, #9ce7dc 100%);
-
-
-  --color-primary: #b1cc09;
 
   /* rounded basic  */
   --radius-primary: 10px;
@@ -59,11 +51,6 @@
 }
 
 @layer utilities {
-  /* .container {
-    padding: 0 16px;
-    margin: 0 auto;
-  } */
-
   input::-webkit-autofill {
     background-color: transparent !important;
     background: transparent !important;
@@ -86,13 +73,22 @@
   }
 }
 
-/* custom styles */
+/*------------------------     custom styles    ------------------------------ */
 
-/*  -------------     ANT - Progess  */
+/*  -------------     ANT - Progess -------------------------- */
+
 .progress-teal-grad .ant-progress-bg {
   background: linear-gradient(90deg, #9ce7dc 0%, #018E81 100%) !important;
 }
 
 .progress-green-grad .ant-progress-bg {
   background: linear-gradient(90deg, #9ce7dc 0%, #89F336 100%) !important;
+}
+
+/*  -------------     ANT - Table  -------------------------- */
+
+.custom-ant-table {
+  overflow: hidden;
+  border: 1px solid var(--color-lightGray) !important;
+  border-radius: 10px;
 }
